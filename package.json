@@ -1,6 +1,8 @@
 {
-  "name": "_work",
+  "name": "work_js-stack-from-scratch",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  }
 }
