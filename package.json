@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node ."
+    "start": "babel-node src",
+    "babel": "babel src"
   },
-  "dependencies": {
-    "color": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "prettier": "^1.10.2"
   }
 }
