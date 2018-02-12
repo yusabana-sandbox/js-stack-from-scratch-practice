@@ -4,6 +4,8 @@ extends:
 plugins:
   - flowtype
   - compat
+env:
+  jest: true
 parser: babel-eslint
 rules:
   semi:
