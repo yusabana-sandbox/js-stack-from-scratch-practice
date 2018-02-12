@@ -1,4 +1,6 @@
+// @flow
+
 import Dog from './dog'
 
-const toby = new Dog('Tody')
+const toby = new Dog('Tidy')
 console.log(toby.bark())
