@@ -9,7 +9,9 @@
     "prod:build": "rimraf lib && babel src -d lib --ignore .test.js",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
     "prod:stop": "pm2 delete server",
-    "test": "eslint src && flow && jest --coverage"
+    "test": "eslint src && flow && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test && yarn prod:build"
   },
   "browserslist": [
     "> 1%"
