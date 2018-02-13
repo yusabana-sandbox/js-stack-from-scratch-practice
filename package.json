@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src/server",
+    "start": "yarn dev:start",
+    "dev:start": "nodemon --ignore lib --exec babel-node src/server",
     "babel": "babel src",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "yarn test",
@@ -33,6 +34,7 @@
     "flow-bin": "^0.65.0",
     "husky": "^0.14.3",
     "jest": "^22.2.2",
+    "nodemon": "^1.14.12",
     "prettier": "^1.10.2"
   }
 }
