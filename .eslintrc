@@ -9,6 +9,9 @@ env:
   jest: true
   browser: true
 parser: babel-eslint
+settings:
+  polyfills: 
+    - fetch
 rules:
   semi:
     - error
