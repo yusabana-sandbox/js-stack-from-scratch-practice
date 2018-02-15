@@ -40,7 +40,7 @@ ReactDOM.render(wrapApp(App, store), rootEl)
 
 if (module.hot) {
   // flow-disable-next-line
-  module.hot.accept('./app', () => {
+  module.hot.accept('../shared/app', () => {
     // eslint-disable-next-line global-require
     const NextApp = require('../shared/app').default
     // flow-disable-next-line
