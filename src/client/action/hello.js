@@ -9,10 +9,11 @@ export const SAY_HELLO_ASYNC_SUCCESS = 'SAY_HELLO_ASYNC_SUCCESS'
 export const SAY_HELLO_ASYNC_FAILURE = 'SAY_HELLO_ASYNC_FAILURE'
 
 export const sayHello = createAction(SAY_HELLO)
+
+// Async関連
 export const sayHelloAsyncRequest = createAction(SAY_HELLO_ASYNC_REQUEST)
 export const sayHelloAsyncSuccess = createAction(SAY_HELLO_ASYNC_SUCCESS)
 export const sayHelloAsyncFailure = createAction(SAY_HELLO_ASYNC_FAILURE)
-
 export const sayHelloAsync = (num: number) => (dispatch: Function) => {
   dispatch(sayHelloAsyncRequest())
   return fetch(helloEndpointRoute(num), { method: 'GET' })
