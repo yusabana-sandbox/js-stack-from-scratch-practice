@@ -1,6 +1,6 @@
-extends: 
+extends:
   - airbnb
-  - 'plugin:flowtype/recommended'
+  - plugin:flowtype/recommended
   - prettier
 plugins:
   - flowtype
@@ -10,8 +10,9 @@ env:
   browser: true
 parser: babel-eslint
 settings:
-  polyfills: 
+  polyfills:
     - fetch
+  import/resolver: webpack
 rules:
   semi:
     - error

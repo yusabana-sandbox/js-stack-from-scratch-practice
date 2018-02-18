@@ -18,6 +18,7 @@ export default {
   },
   devtool: isProd ? false : 'source-map',
   resolve: {
+    modules: ['node_modules', 'src'],
     extensions: ['.js', '.jsx'],
   },
   devServer: {
