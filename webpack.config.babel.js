@@ -18,7 +18,7 @@ export default {
   },
   devtool: isProd ? false : 'source-map',
   resolve: {
-    modules: ['node_modules', 'src'],
+    modules: ['node_modules', 'src'], // srcを解決すればプロジェクトからのルートパスで import を定義できる
     extensions: ['.js', '.jsx'],
   },
   devServer: {
